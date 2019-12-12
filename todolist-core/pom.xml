@@ -13,7 +13,17 @@
     <name>todolist-core</name>
 
     <dependencies>
-
+         <dependency>
+            <groupId>io.github.snyk</groupId>
+            <artifactId>todolist-web-common</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>javax</groupId>
+                    <artifactId>javaee-web-api</artifactId>
+                </exclusion>
+            </exclusions>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <!--spring-->
         <dependency>
             <groupId>org.springframework</groupId>
